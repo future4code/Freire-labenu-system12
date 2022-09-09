@@ -1,0 +1,14 @@
+POST  http://localhost:3003/team
+Content-Type: application/json
+
+{
+    "id":"006",
+    "name":"Lopes",
+    "module": ""
+}
+
+###
+
+GET http://localhost:3003/team
+
+###
