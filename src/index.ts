@@ -1,10 +1,13 @@
 import { AddressInfo } from "net";
 import app from "./app";
-import studentsController from "./endpoint/studentsController";
+import TeamController from "./endpoint/TeamController";
 
 
 
-app.post("/user")
+const teamController = new TeamController()
+
+app.post('/team', teamController.createTeam)
+app.get('/team', teamController.getTeam)
 
 
 const server = app.listen(process.env.PORT || 3003, () => {
