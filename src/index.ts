@@ -1,7 +1,10 @@
 import { AddressInfo } from "net";
 import app from "./app";
+import studentsController from "./endpoint/studentsController";
 
 
+
+app.post("/user")
 
 
 const server = app.listen(process.env.PORT || 3003, () => {
