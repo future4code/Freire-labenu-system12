@@ -18,3 +18,29 @@ Content-Type:  application/json
 {
     "module": "1"
 }
+
+###
+
+GET http://localhost:3003/instructor
+
+###
+
+POST http://localhost:3003/instructor
+Content-Type:  application/json
+
+{
+    "name": "teste3",
+    "email": "teste3@labenu.com.br",
+    "birth_date": "15/09/2009",
+    "team_id": "b4aa102d-836d-4307-9168-e3da07b6feac",
+    "specialty": ["React", "Node.js"]
+}
+
+###
+
+PUT http://localhost:3003/instructor/0aadac82-3449-458a-8a00-ec99c2ccfed6
+Content-Type:  application/json
+
+{
+    "team_id": "62fddb15-7301-4245-b762-d87b9154c13d"
+}

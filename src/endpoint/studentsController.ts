@@ -4,12 +4,12 @@ class studentsController {
 
 async createStudent(req:Request,res:Response){
 try {
-    const {name,email,birthdate,turma_id}=req.body
+    const {name,email,birthdate,team_id}=req.body
     const id = Date.now.toString()
-if(!name||!email||!birthdate||!turma_id){
+if(!name||!email||!birthdate||!team_id){
     throw new Error("Todos os campos deve ser preenchidos");
 }
-// const student = new student(id,name,email,birthdate,turma_id)
+// const student = new student(id,name,email,birthdate,team_id)
 
 
 
