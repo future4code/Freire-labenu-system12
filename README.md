@@ -4,9 +4,9 @@ Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, h
 
 Ele deve possuir, ao menos, as 3 entidades importantes:
 
-1. Estudantes 
+1. Estudentes 
 
-    Representa estudantes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e os principais hobbies dele. 
+    Representa estudentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e os principais hobbies dele. 
 
 2. Docente
 
@@ -20,14 +20,14 @@ Ele deve possuir, ao menos, as 3 entidades importantes:
 
 As funcionalidades básicas são:
 
-→ Criar estudante;
+→ Criar estudente;
 
 → Criar docente;
 
 → Criar turma;
 
-→ Adicionar estudante na turma;
+→ Adicionar estudente na turma;
 
 → Adicionar docente na turma;
 
-→ Pegar a idade de algum estudante a partir do id
+→ Pegar a idade de algum estudente a partir do id

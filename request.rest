@@ -2,9 +2,8 @@ POST  http://localhost:3003/team
 Content-Type: application/json
 
 {
-    "id":"006",
-    "name":"Lopes",
-    "module": ""
+    "name":"Ailton",
+    "module": "0"
 }
 
 ###
@@ -12,3 +11,67 @@ Content-Type: application/json
 GET http://localhost:3003/team
 
 ###
+
+PUT http://localhost:3003/team/update/006
+Content-Type:  application/json
+
+{
+    "module": "1"
+}
+
+###
+
+GET http://localhost:3003/instructor
+
+###
+
+POST http://localhost:3003/instructor
+Content-Type:  application/json
+
+{
+    "name": "teste3",
+    "email": "teste3@labenu.com.br",
+    "birth_date": "15/09/2009",
+    "team_id": "b4aa102d-836d-4307-9168-e3da07b6feac",
+    "specialty": ["React", "Node.js"]
+}
+
+###
+
+PUT http://localhost:3003/instructor/0aadac82-3449-458a-8a00-ec99c2ccfed6
+Content-Type:  application/json
+
+{
+    "team_id": "62fddb15-7301-4245-b762-d87b9154c13d"
+}
+
+###
+
+GET http://localhost:3003/student?name=Mateus
+
+
+###
+
+GET http://localhost:3003/student/all
+
+###
+
+POST http://localhost:3003/student
+Content-Type:  application/json
+
+{
+    "name": "Mateus Rosa",
+    "email": "mateus@gmail.com",
+    "birth_date": "22/08/2002",
+    "team_id": "62fddb15-7301-4245-b762-d87b9154c13d",
+    "hobbies": ["pilotar", "jogar"]
+}
+
+###
+
+PUT http://localhost:3003/student/26532068-b6e0-44dd-90a6-eae0f8fecc18
+Content-Type:  application/json
+
+{
+    "team_id": "b4aa102d-836d-4307-9168-e3da07b6feac"
+}

@@ -1,20 +1,21 @@
-import { AddressInfo } from "net";
-import app from "./app";
+import { app } from "./app";
+import { InstructorController } from "./endpoint/InstructorController";
+import { StudentController } from "./endpoint/studentsController";
 import TeamController from "./endpoint/TeamController";
 
-
-
 const teamController = new TeamController()
+const instructorController = new InstructorController()
+const studentController = new StudentController()
 
 app.post('/team', teamController.createTeam)
 app.get('/team', teamController.getTeam)
+app.put('/team/update/:id', teamController.changeModule)
 
+app.post('/instructor', instructorController.createInstructor)
+app.get('/instructor', instructorController.getInstructor)
+app.put('/instructor/:id', instructorController.changeTeamInstructor)
 
-const server = app.listen(process.env.PORT || 3003, () => {
-    if (server) {
-       const address = server.address() as AddressInfo;
-       console.log(`Server is running in http://localhost:${address.port}`);
-    } else {
-       console.error(`Failure upon starting server.`);
-    }
-});
+app.post('/student', studentController.createStudent)
+app.get('/student', studentController.getStudentByName)
+app.get('/student/all', studentController.getStudents)
+app.put('/student/:id', studentController.changeTeamStudent)

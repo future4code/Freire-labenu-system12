@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { uuid } from 'uuidv4';
 import TeamData from "../data/TeamData";
 import Team from "../model/Team";
 
@@ -9,11 +10,13 @@ export default class TeamController {
 
         try {
 
-            const { id, name, module } = req.body
+            const { name, module } = req.body
 
-            if (!id || !name) {
-                throw new Error("O 'Id', 'Nome' e 'Módulo' devem ser informados")
+            if (!name || !module) {
+                throw new Error("O Nome' e 'Módulo' são obrigatórios")
             }
+
+            const id = uuid()
 
             const team = new Team(id, name, module)
 
@@ -49,4 +52,34 @@ export default class TeamController {
         }
     }
 
+    async changeModule(req: Request, res: Response) {
+
+        try {
+
+            const { id } = req.params
+            const { module } = req.body
+
+            if (!module) {
+                throw new Error("O módulo é obrigatório.")
+            }
+
+            if (!id) {
+                throw new Error("O Id é obrigatório.")
+            }
+
+            const teamDB = new TeamData()
+            const team = await teamDB.selectTeamById(id)
+
+            if (!team) {
+                throw new Error('A turma não foi encontrada.')
+            }
+
+            await teamDB.updateModule(id, module)
+
+            res.status(200).send({ message: 'Módulo atualizado com sucesso!' })
+
+        } catch (error: any) {
+            res.status(500).send({ message: error.message })
+        }
+    }
 }
