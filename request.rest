@@ -2,9 +2,8 @@ POST  http://localhost:3003/team
 Content-Type: application/json
 
 {
-    "id":"006",
-    "name":"Lopes",
-    "module": ""
+    "name":"Ailton",
+    "module": "0"
 }
 
 ###
@@ -12,3 +11,10 @@ Content-Type: application/json
 GET http://localhost:3003/team
 
 ###
+
+PUT http://localhost:3003/team/update/006
+Content-Type:  application/json
+
+{
+    "module": "1"
+}

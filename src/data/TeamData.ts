@@ -21,15 +21,45 @@ export default class TeamData extends BaseDataBase {
 
         try {
 
-            const result = await BaseDataBase.connection().select("*").from(TeamData.TABLE_NAME)
+            const result = await BaseDataBase.connection()
+                .select("*")
+                .from(TeamData.TABLE_NAME)
+                .where('module', '>', '0')
 
             return result
 
         } catch (error: any) {
             throw new Error(error.sqlMessage || error.message)
         }
-
-
     }
 
+    async selectTeamById(id: string) {
+
+        try {
+
+            const result = await BaseDataBase.connection()
+                .select('*')
+                .from(TeamData.TABLE_NAME)
+                .where({ id })
+
+            return new Team(result[0].id, result[0].name, result[0].module)
+
+        } catch (error: any) {
+            throw new Error(error.sqlMessage || error.message)
+        }
+    }
+
+    async updateModule(id: string, module: string) {
+
+        try {
+
+            await BaseDataBase.connection()
+                .update({ module })
+                .into(TeamData.TABLE_NAME)
+                .where({ id })
+
+        } catch (error: any) {
+            throw new Error(error.sqlMessage || error.message)
+        }
+    }
 }

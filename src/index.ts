@@ -8,6 +8,7 @@ const teamController = new TeamController()
 
 app.post('/team', teamController.createTeam)
 app.get('/team', teamController.getTeam)
+app.put('/team/update/:id', teamController.changeModule)
 
 
 const server = app.listen(process.env.PORT || 3003, () => {
