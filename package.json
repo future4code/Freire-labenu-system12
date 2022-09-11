@@ -25,7 +25,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev ./src/index.ts",
-    "start": "tsc && node ./build/index.js",
+    "start": "node ./build/index.js",
+    "postinstall": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,7 +34,7 @@
     "url": "git+https://github.com/future4code/Freire-labenu-system12.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Guilherme, João Victor, Paulo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/future4code/Freire-labenu-system12/issues"

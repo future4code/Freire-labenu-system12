@@ -1,8 +1,17 @@
-## LabenuSystem:
+# LabenuSystem:
 
-Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização. 
+<h1 align="center">
+<img width=300 src="https://www.freepik.com/free-photos-vectors/school-clip-art">
+</h1>
 
-Ele deve possuir, ao menos, as 3 entidades importantes:
+
+### <div align="center">  
+
+| [<img src="https://media-exp1.licdn.com/dms/image/C4E03AQFD_Ae-x4CFpw/profile-displayphoto-shrink_800_800/0/1638877008705?e=1668643200&v=beta&t=PASj12tPvtZ3nc4UUISxRm1ul4iCUSJiT_O-JDdkRjc" width=150><br><sub> Guilherme Beutler </sub>](https://www.linkedin.com/in/guilherme-beutler/) | [<img src="https://media-exp1.licdn.com/dms/image/C4E03AQEccIU88S8cnA/profile-displayphoto-shrink_200_200/0/1653579205184?e=1668643200&v=beta&t=6-f285ZmwTGPO0hQxllN-1MtQ8nEwQH1D4ohHBwQv8c" width=150><br><sub> João Victor Victoy Guimarães </sub>](https://www.linkedin.com/in/joaovictoy/) | [<img src="https://media-exp1.licdn.com/dms/image/C4E03AQGr14m1l48rjQ/profile-displayphoto-shrink_200_200/0/1568823070836?e=1668643200&v=beta&t=a_w1jXr0I_NmucqR37x6zb_Q2cl36CtsyE2Ar6_BNGo" width=150><br><sub> Paulo Gabriel Mendes </sub>](https://www.linkedin.com/in/paulo-gabriel-a81650106/) | 
+|---|---|---|
+
+</div>
+
 
 1. Estudentes 
 
@@ -18,16 +27,33 @@ Ele deve possuir, ao menos, as 3 entidades importantes:
 
     O módulo pode assumir os valores de 1 a 7 ou `undefined`, indicando que as aulas dessa turma ainda não começaram. Para esse exercício, vamos considerar que existam dois tipos de turma: integral ou noturna. Há uma restrição para o nome das turmas noturnas: tem que terminar com `-na-night`.
 
-As funcionalidades básicas são:
 
-→ Criar estudente;
+## [API LINK](https://documenter.getpostman.com/view/21555368/2s7YYoBSKJ)
 
-→ Criar docente;
+<h3>As funcionalidades básicas são: </h3>
 
-→ Criar turma;
+>
+> Criar estudente;
+>
+> Criar docente;
+>
+> Criar turma;
+>
+> Adicionar estudente na turma;
+>
+> Adicionar docente na turma;
+>
+> Pegar a idade de algum estudente a partir do id
+>
 
-→ Adicionar estudente na turma;
+<h3> Tecnologias/Ferramentas </h3>
 
-→ Adicionar docente na turma;
-
-→ Pegar a idade de algum estudente a partir do id
+>
+> Typescript 
+> Node.js
+> MySQL
+> Heroku App 
+> Express/Cors
+> Knex/dotenv
+> uuidv4 
+>
