@@ -1,11 +1,11 @@
 # LabenuSystem:
 
 <h1 align="center">
-<img width=300 src="https://www.freepik.com/free-photos-vectors/school-clip-art">
+<img width=350 src="https://www.freepik.com/free-photos-vectors/school-clip-art">
 </h1>
 
 
-### <div align="center">  
+ <div align="center">  
 
 | [<img src="https://media-exp1.licdn.com/dms/image/C4E03AQFD_Ae-x4CFpw/profile-displayphoto-shrink_800_800/0/1638877008705?e=1668643200&v=beta&t=PASj12tPvtZ3nc4UUISxRm1ul4iCUSJiT_O-JDdkRjc" width=150><br><sub> Guilherme Beutler </sub>](https://www.linkedin.com/in/guilherme-beutler/) | [<img src="https://media-exp1.licdn.com/dms/image/C4E03AQEccIU88S8cnA/profile-displayphoto-shrink_200_200/0/1653579205184?e=1668643200&v=beta&t=6-f285ZmwTGPO0hQxllN-1MtQ8nEwQH1D4ohHBwQv8c" width=150><br><sub> João Victor Victoy Guimarães </sub>](https://www.linkedin.com/in/joaovictoy/) | [<img src="https://media-exp1.licdn.com/dms/image/C4E03AQGr14m1l48rjQ/profile-displayphoto-shrink_200_200/0/1568823070836?e=1668643200&v=beta&t=a_w1jXr0I_NmucqR37x6zb_Q2cl36CtsyE2Ar6_BNGo" width=150><br><sub> Paulo Gabriel Mendes </sub>](https://www.linkedin.com/in/paulo-gabriel-a81650106/) | 
 |---|---|---|
@@ -50,10 +50,16 @@
 
 >
 > Typescript 
+>
 > Node.js
+>
 > MySQL
+>
 > Heroku App 
+>
 > Express/Cors
+>
 > Knex/dotenv
+>
 > uuidv4 
 >
