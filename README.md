@@ -1,9 +1,8 @@
 # Labenu System - 12
+###
+<h2>Integrantes</h2> 
 
-<h1 align="center">
-<img width=500 src="./assets/large-school-building-scene_1308-32058.jpg">
-</h1>
-
+###
 
  <div align="center">  
 
@@ -11,6 +10,8 @@
 |---|---|---|
 
 </div>
+
+###
 
 >
 > 1. Estudentes 
