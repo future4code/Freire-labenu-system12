@@ -1,7 +1,7 @@
-# LabenuSystem:
+# Labenu System - 12
 
 <h1 align="center">
-<img width=350 src="./assets/large-school-building-scene_1308-32058.jpg">
+<img width=500 src="./assets/large-school-building-scene_1308-32058.jpg">
 </h1>
 
 
